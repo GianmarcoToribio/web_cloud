@@ -1,0 +1,126 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+  }
+  
+  .fila1 {
+      background: url('../images/fondo.soporte.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+      position: relative;
+      height: 300px;
+  }
+  
+  .fila1:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .texto-fila1 {
+      position: relative;
+      z-index: 1;
+  }
+  
+  input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      margin-top: 10px;
+  }
+  
+  .fila2 {
+      padding: 20px;
+      background-color: #FFF;
+      text-align: center;
+  }
+  
+  .titulo {
+      margin-bottom: 20px;
+  }
+  
+  .iconos-contenedor {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .icono {
+      text-align: center;
+      cursor: pointer;
+  }
+  
+  .icono img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+  }
+  
+  .fila3 {
+      background-color: #FF6600;
+      padding: 40px 0;
+      text-align: center;
+      
+  }
+
+  table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: white;
+  }
+  
+  th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+  }
+  
+  th {
+      background-color: #333;
+      color: white;
+  }
+
+  .accordionE-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button {
+    background-color: #FFF3E5 !important; 
+    color: #FF6600 !important; 
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:  #FFF3E5 !important; 
+    color: #FF6600 !important; 
+    
+}
+
+.accordion-body {
+    background-color: #ffffff !important; 
+}
+.fila3 {
+    padding: 20px;
+}
+
+.accordion {
+    margin: 0 15px; /* Aplica margen a los acordeones dentro de cada columna */
+}
+
+.iconos-contenedor {
+    padding: 20px 0; /* Añadir espacio entre los iconos y el borde */
+}
+
+.icono img {
+    margin-bottom: 10px; /* Para dar un poco de espacio entre la imagen y el texto */
+}

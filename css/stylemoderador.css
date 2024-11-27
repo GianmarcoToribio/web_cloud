@@ -1,0 +1,195 @@
+:root {
+    --primary-orange: #FF6600;
+    --secondary-orange: #FF8533;
+    --dark-orange: #CC5200;
+    --light-orange: #FFE0CC;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: var(--black);
+}
+
+header {
+    background-color: white;
+    color: var(--white); /* Mantiene el texto blanco, puedes cambiarlo si es necesario */
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid #FF6600; /* Añade un borde del color deseado */
+    z-index: 1000;
+    position: fixed;
+    width:  100%;
+}
+
+img{
+    height: 40px;
+    margin-left: 40px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height:  100vh;
+
+}
+
+nav {
+    height: 91%; /* Ocupa toda la altura de la ventana */
+    width: 200px;
+    background-color: var(--secondary-orange);
+    padding: 1rem;
+    position: fixed; /* Permite que el menú se mantenga visible */
+    top: 0; /* Para que comience desde la parte superior */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 58px;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+nav ul li a, .logout a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-orange);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, .logout a:hover {
+    background-color: var(--dark-orange);
+    border-color: var(--light-orange);
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.welcome{
+    color: #000000;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+
+main {
+    padding: 2rem;
+    background-color: var(--white);
+    margin-left: 230px;
+    
+    margin-top: 10px;
+
+    height:  100%;
+}
+
+.ticket-card {
+    background-color: var(--white);
+    border: 1px solid var(--primary-orange);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Establecer un ancho máximo */
+    margin-bottom: 10px;
+}
+
+.ticket-card h5 {
+    color: var(--primary-orange);
+    
+}
+
+.card-body{
+    max-width: 550px;
+    padding: 20px;
+    
+}
+.card-title{
+    margin-top: -8px;
+    font-weight: bold;
+    font-size:larger;
+    
+}
+.btn-agregar-solucion {
+    background-color: var(--primary-orange);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-agregar-solucion:hover {
+    background-color: var(--dark-orange);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enviar-solucion {
+    margin-top: 5px;
+    background-color: var(--primary-orange);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar-solucion:hover {
+    background-color: var(--dark-orange);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-container {
+    display: grid; /* Usamos grid para organizar las columnas */
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas iguales */   
+}
+.form-control{
+    width: 300px;
+    height: 200px;
+}
+
+
+@media (max-width: 768px) {
+    .ticket-container {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, solo una columna */
+    }
+}
+
+.accordion-content {
+    display: none; /* Ocultarlo por defecto */
+    margin-top: 10px;
+}
+
+.textarea-solution {
+    width: 100%;
+    min-height: 100px;
+}
